@@ -78,7 +78,7 @@
                   <p>* - Required Fields</p>
                   
 				  <label for="prodid"><b>Product ID <span class = 'text-danger'>*</span></b></label>
-                  <input  type="text" id="prodid" readonly value = "EVNT-DRV-DIV">
+                  <input  type="text" id="prodid" readonly value = "EVNT-DRV-MID-1">
                   
 				  
 				  <label for="prodname"><b>Product Name <span class = 'text-danger'>*</span></b></label>
@@ -223,6 +223,7 @@ function saveProduct() {
 
     document.getElementById('prodname').value = '';
     document.getElementById('sellprice').value = '';
+    document.getElementById('prodid').value = `EVNT-DRIV-MID-${currentId}`;
     document.getElementById('filtercategory').value = '';
 }
 
