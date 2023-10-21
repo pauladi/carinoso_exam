@@ -220,6 +220,9 @@ function saveProduct() {
 
     updateTable();
     updateCategoryCounts();
+
+    document.getElementById('prodname').value = '';
+    document.getElementById('sellprice').value = '';
 }
 
 function updateTable(category = null) {
